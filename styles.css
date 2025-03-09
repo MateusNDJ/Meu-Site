@@ -1,0 +1,226 @@
+/* Reset básico e estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Estilos das seções de conteúdo */
+.content-section {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.bio-content {
+  text-align: center;
+}
+
+.foto-container {
+  display: inline-block;
+  margin-top: 20px;
+  border: 5px solid #007BFF;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* Links padrão - branco */
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Ao passar o mouse - azul */
+a:hover {
+  color: #1e90ff;
+}
+
+/* Estilos das habilidades */
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.habilidade-categoria {
+  text-align: left;
+}
+
+.habilidade-categoria h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.habilidade-categoria ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.habilidade-categoria li {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+/* Estilos dos projetos */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projeto-item {
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.projeto-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Estilos do contato */
+.contato-info {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos dos botões */
+.btn {
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Estilos do botão "Voltar ao Topo" */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: none; /* Oculto por padrão */
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .content-section {
+      padding: 1rem;
+  }
+
+  .foto-perfil {
+      width: 120px;
+      height: 120px;
+  }
+
+  .habilidades-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .projetos-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .social-icons img {
+      width: 40px;
+      height: 40px;
+  }
+}

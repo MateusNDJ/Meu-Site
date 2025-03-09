@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos de Design - Mateus</title>
+    <link rel="stylesheet" href="/projeto.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="dev.html">Projetos Dev</a></li>
+                <li><a href="design.html">Projetos Design</a></li>
+                <li><a href="/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-section">
+        <h1>Projetos de Design para minha empresa atual</h1>
+        <div class="projeto-container">
+            <div class="projeto">
+                <img src="../images/JORNAL DE PROMOS ESQUENTA AGILE.png" alt="" onclick="openModal(this)">
+                <h4>Jornal de Ofertas - Esquenta Agile</h4>
+                <p>Material promocional desenvolvido para divulgar ofertas sazonais da Agile Atacadista.</p>
+            </div>
+            <div class="projeto">
+                <img src="../images/instagram.png" alt="" onclick="openModal(this)">
+                <h4>E-mail Marketing - Agile</h4>
+                <p>Criação de layout para campanha de e-mail marketing, reforçando a identidade da marca.</p>
+            </div>
+            <div class="projeto">
+                <img src="../images/Esquenta .png" alt="" onclick="openModal(this)">
+                <h4>Stories Promocionais</h4>
+                <p>Criação de stories para o Instagram, destacando promoções e novidades.</p>
+            </div>
+            <div class="projeto">
+                <img src="../images/FULL BANNER SITE AGILE.png" alt="" onclick="openModal(this)">
+                <img src="../images/FULL BANNER SITE AGILE (2).png" alt="" onclick="openModal(this)">
+                <img src="../images/FULL BANNER SITE AGILE (3).png" alt="" onclick="openModal(this)">
+                <h4>Banners para o Site</h4>
+                <p>Design de banners para o site da Agile, promovendo campanhas estratégicas.</p>
+            </div>
+        </div>
+    </main>
+    <br>
+    <main class="content-section">
+        <h1>Projetos de Design para Outros Clientes</h1>
+        <div class="projeto-container">
+            <div class="projeto">
+                <img src="/images/Story Instagram .png" alt="" onclick="openModal(this)">
+                <h4>Story para Instagram</h4>
+                <p>Design de stories para redes sociais, aumentando a interação com o público.</p>
+            </div>
+            <div class="projeto">
+                <img src="/images/Stories black Trunk.jpg" alt="" onclick="openModal(this)">
+                <h4>Promoção Black Trunk</h4>
+                <p>Criação de artes para campanhas promocionais da BTpesca.</p>
+            </div>
+            <div class="projeto">
+                <img src="/images/Stories black Trunk (Post para Instagram).png" alt="" onclick="openModal(this)">
+                <h4>Postagem de Lançamento</h4>
+                <p>Criação de post para Instagram, destacando novos produtos da BTpesca.</p>
+            </div>
+            <div class="projeto">
+                <img src="/images/agileatacadista.com.br.png" alt="" onclick="openModal(this)">
+                <h4>Comunicado</h4>
+                <p>Comunicado avisando recesso </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <embed class="modal-content" id="pdf01" type="application/pdf" width="100%" height="600px" style="display: none;">
+        <div id="caption"></div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
